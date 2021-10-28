@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://www.pantaloons.com/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/paymentPage.css">
+</head>
+<body>
+        <div id="outerBox">
+
+
+            <div id="cardNo">
+                <div class="cardText">Card Number</div>
+                <div>
+                    <input type="number" oninput="limitc(this);" id="inputCardNo" required/>
+                </div>
+            </div>
+
+            <div class="imgsBox">
+                    <div>
+                        <img src="https://www.mastercard.com/content/dam/mccom/global/logos/logo-mastercard-mobile.svg" class="img" />
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png" class="img1" />
+                    </div>
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/RuPay.svg/1200px-RuPay.svg.png" class="img2" />
+                    </div>
+            </div>
+
+            <div id="expDate">
+                    <div class="expText">Expiration Date</div>
+                    <div class="dates">
+                        <div class="mm">
+                            <div>mm</div>
+                            <input type="number" oninput="limit(this);" id="inputmm" required>
+
+
+                        </div>
+                        <div class="yy">
+                            <div>yy</div>
+                            <input type="number" oninput="limit(this);" id="inputyy" required/>
+
+                        </div>
+
+                    </div>
+                    <div class="cvv">
+                        <div class="cvvText">cvv</div>
+                        <div>
+                            <input type="password" oninput="limit1(this);" id="cvvNu" required/>
+                        </div>
+
+                    </div>
+            </div>
+
+            <div class="billText">
+                <div class="align">Billing Address</div>
+                <div>
+                    <input type="text" id="billAdd" required/>
+                </div>
+            </div>
+
+            <div class="billText">
+                <div class="align">Shipping Address</div>
+                <div>
+                    <input type="text" id="ShipAdd" required/>
+                </div>
+            </div>
+
+
+            <div id="payNow">
+
+                Pay Now
+
+            </div>
+
+
+        </div>
+</body>
+</html>
+<script src="../scripts/paymentPage.js"></script>
